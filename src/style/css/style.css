@@ -1,0 +1,58 @@
+@font-face {
+  font-family: 'Geometria-Medium';
+  src: url("../fonts/Geometria-Medium.eot");
+  src: url("../fonts/Geometria-Medium.woff") format("woff"), url("../fonts/Geometria-Medium.ttf") format("truetype"), url("../fonts/Geometria-Medium.svg") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Geometria-Bold';
+  src: url("../fonts/Geometria-Bold.eot");
+  src: url("../fonts/Geometria-Bold.woff") format("woff"), url("../fonts/Geometria-Bold.ttf") format("truetype"), url("../fonts/Geometria-Bold.svg") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+.clearfix {
+  clear: both; }
+
+.b-navigation {
+  width: 1500px;
+  margin: 0 auto;
+  padding-top: 15px;
+  padding-bottom: 20px; }
+
+.b-navigation-menu {
+  list-style: none;
+  float: left; }
+  .b-navigation-menu__item {
+    display: inline-block;
+    margin-right: 40px; }
+  .b-navigation-menu__link {
+    font-size: 13px;
+    font-family: "Geometria-Medium";
+    color: #494949;
+    transition: .3s;
+    text-decoration: none; }
+    .b-navigation-menu__link_attention {
+      color: #be2a2a !important; }
+  .b-navigation-menu__link:hover {
+    color: #4622ff; }
+
+.b-navigation-login {
+  list-style: none;
+  float: right; }
+  .b-navigation-login__item {
+    display: inline-block;
+    margin-right: 20px; }
+  .b-navigation-login__link {
+    font-size: 15px;
+    font-family: "Geometria-Bold";
+    color: #000000;
+    text-decoration: none; }
+    .b-navigation-login__link_attention {
+      color: #be2a2a; }
+
+.b-header {
+  background-color: #f2f2f2;
+  height: 145px;
+  width: 100%; }
