@@ -12,6 +12,13 @@
   font-weight: normal;
   font-style: normal; }
 
+@font-face {
+  font-family: 'GothaProReg';
+  src: url("../fonts/GothaProReg.eot");
+  src: url("../fonts/GothaProReg.woff") format("woff"), url("../fonts/GothaProReg.ttf") format("truetype"), url("../fonts/GothaProReg.svg") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
 .clearfix {
   clear: both; }
 
@@ -53,6 +60,44 @@
       color: #be2a2a; }
 
 .b-header {
+  min-width: 1500px;
   background-color: #f2f2f2;
   height: 145px;
   width: 100%; }
+
+.b-header-main {
+  width: 1500px;
+  margin: 0 auto;
+  display: flex; }
+  .b-header-main__logo {
+    padding-top: 17px;
+    padding-bottom: 13px;
+    margin-right: 30px; }
+
+.b-search-wrap {
+  border: 1px solid #e3e3e3;
+  display: flex; }
+
+.b-search {
+  display: flex;
+  padding-top: 53px;
+  padding-bottom: 50px; }
+  .b-search__field {
+    font-family: "GothaProReg";
+    font-size: 13px;
+    padding: 10px 20px;
+    color: #494949;
+    width: 465px;
+    border: none; }
+  .b-search__field::placeholder {
+    color: #494949; }
+  .b-search__btn {
+    border: none;
+    width: 80px;
+    height: 100%;
+    background-color: #be2a2a;
+    text-align: center;
+    color: white;
+    cursor: pointer; }
+  .b-search__btn:hover {
+    background-color: rgba(190, 33, 22, 0.82); }

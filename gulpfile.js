@@ -41,7 +41,7 @@ gulp.task('production-js', function () {
         .pipe(gulp.dest('build/js/'));
 });
 gulp.task('production-css', function () {
-    gulp.src(['src/style/css/reset.css','src/style/css/style.css'])
+    gulp.src(['src/style/css/reset.css','src/style/css/font-awesome.css','src/style/css/style.css'])
         .pipe(concat('style.css'))
         .pipe(autoprefixer({
             browsers: ['last 2 versions'],
