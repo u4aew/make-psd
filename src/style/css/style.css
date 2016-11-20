@@ -523,3 +523,78 @@
   font-size: 25px;
   font-family: "Geometria-Bold";
   text-transform: uppercase; }
+
+.b-promo__about {
+  margin-top: 34px;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center; }
+
+.b-about {
+  height: 240px;
+  width: 240px;
+  margin-right: 70px; }
+
+.b-about:last-child {
+  margin-right: 0; }
+
+.b-about-link {
+  height: 240px;
+  width: 240px;
+  border-radius: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: .4s;
+  background-size: 10%;
+  text-decoration: none; }
+
+.b-about-link:hover {
+  background-color: #f9f9f9;
+  background-size: 100%;
+  text-decoration: underline; }
+
+.b-about-link__title {
+  margin-top: 15px;
+  text-align: center;
+  font-size: 17px;
+  width: 100%;
+  color: #494949;
+  font-family: "Geometria-Medium"; }
+
+.b-promo-btn {
+  margin-top: 10px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.promo-btn-buy {
+  width: 200px;
+  padding: 10px 20px;
+  border: none;
+  background-color: #be2a2a;
+  color: white;
+  font-family: "Geometria-Bold";
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 13px; }
+
+.footer {
+  background-color: #eeefee;
+  border-top: 1px solid #d2d2d2;
+  height: 20px;
+  padding: 14px 0; }
+
+.footer-main {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 1500px;
+  margin: 0 auto; }
+
+.footer-main {
+  font-size: 12px;
+  font-family: Arial; }
