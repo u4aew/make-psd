@@ -617,11 +617,17 @@ $FontPhone: 'Geometria-ExtaBlack';
 .product-box-short, .product-box-long {
   position: relative;
   transition: .4s;
+  visibility: hidden;
+}
+
+.js-product-box-last {
+  visibility: visible !important;
 }
 
 .position-normal {
   transform: translateY(0) !important;
-}
+  visibility: visible;
+ }
 
 .b-promo {
   margin-top: 55px;
