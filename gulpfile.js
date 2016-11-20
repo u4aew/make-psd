@@ -33,15 +33,15 @@ gulp.task('sass', function () {
         .pipe(connect.reload());
 });
 
-gulp.task('production-js', function () {
-    return gulp.src(['src/js/jquery-3.1.1.js','src/js/jquery.jcarousel.js'])
+gulp.task('production-js', function () { 
+    return gulp.src(['src/js/jquery-3.1.1.js', 'src/js/jquery.slides.js', 'src/js/slides-settings.js', 'src/js/owl.carousel.js', 'src/js/carousel-setting.js'])
         .pipe(concat('all.js'))
         .pipe(jsmin())
         .pipe(rename({suffix: '.min'}))
         .pipe(gulp.dest('build/js/'));
 });
 gulp.task('production-css', function () {
-    gulp.src(['src/style/css/reset.css','src/style/css/font-awesome.css','src/style/css/style.css'])
+    gulp.src(['src/style/css/reset.css', 'src/style/css/font-awesome.css', 'src/style/css/owl.theme.css', 'src/style/css/owl.carousel.css', 'src/style/css/style.css'])
         .pipe(concat('style.css'))
         .pipe(autoprefixer({
             browsers: ['last 2 versions'],
