@@ -22,6 +22,14 @@
   font-style: normal;
 }
 
+@font-face {
+  font-family: 'Geometria-ExtaBlack';
+  src: url('../fonts/Geometria-ExtaBlack.eot');
+  src: url('../fonts/Geometria-ExtaBlack.woff') format('woff'), url('../fonts/Geometria-ExtaBlack.ttf') format('truetype'), url('../fonts/Geometria-ExtaBlack.svg') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
 $WidthContent: 1500px;
 
 $FontNavigation: 'Geometria-Medium';
@@ -38,6 +46,8 @@ $ColorloginAttention: #be2a2a;
 $HeaderColor: #f2f2f2;
 
 $FontSearch: 'GothaProReg';
+$FontPhone: 'Geometria-ExtaBlack';
+
 .clearfix {
   clear: both;
 }
@@ -117,12 +127,13 @@ $FontSearch: 'GothaProReg';
   display: flex;
   padding-top: 53px;
   padding-bottom: 50px;
+  margin-right: 52px;
   &__field {
     font-family: $FontSearch;
     font-size: 13px;
     padding: 10px 20px;
     color: #494949;
-    width: 465px;
+    width: 420px;
     border: none;
   }
   &__field::placeholder {
@@ -140,4 +151,119 @@ $FontSearch: 'GothaProReg';
   &__btn:hover {
     background-color: rgba(190, 33, 22, 0.82);
   }
+}
+
+.b-header-main__phone {
+  padding-top: 40px;
+  padding-bottom: 40px;
+  margin-right: 50px;
+}
+
+.b-phone {
+  &__number-top {
+    font-size: 20px;
+    font-family: $FontPhone;
+    text-decoration: none !important;
+    color: $ColorloginAttention;
+    margin-bottom: 6px;
+  }
+  &__number-top:hover {
+    text-decoration: underline;
+
+  }
+  &__number-bottom {
+    font-size: 20px;
+    font-family: $FontPhone;
+    text-decoration: none !important;
+    color: #393476;
+  }
+  &__number-bottom:hover {
+    text-decoration: underline;
+  }
+  &__button {
+    margin-top: 12px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    font-family: $FontNavigation;
+    font-size: 12px;
+    color: #494949;
+    border-bottom: 1px dashed #494949;
+    text-align: left;
+    padding: 0;
+  }
+}
+
+.b-header-main__like {
+  margin-right: 25px;
+}
+
+.b-like {
+  text-align: center;
+  padding-top: 50px;
+  &__icon {
+    color: #999999;
+    font-size: 22px;
+    cursor: pointer;
+    transition: .3s;
+    margin-bottom: 18px;
+  }
+  &__icon:hover {
+    color: $ColorloginAttention;
+  }
+  &__count {
+    font-family: $FontNavigation;
+    font-size: 15px;
+  }
+}
+
+.b-cart {
+  padding-top: 50px;
+  &__icon {
+    text-align: center;
+    font-size: 28px;
+    color: #393476;
+    margin-bottom: 12px;
+  }
+  &__info {
+    font-size: 15px;
+    font-family: $FontNavigation;
+    &__count {
+      color: #393476;
+    }
+    &__price {
+      color: $ColorloginAttention;
+    }
+  }
+}
+
+.b-menu {
+  height: 67px;
+  width: $WidthContent;
+  margin: 0 auto;
+}
+
+.list-menu {
+  width: 1145px;
+  margin: 28px auto;
+  &__item {
+    display: inline-block;
+    margin-right: 34px;
+  }
+  &__item:last-child {
+    margin-right: 0 !important;
+  }
+  &__link {
+    font-family: $FontLogin;
+    font-size: 15px;
+    text-decoration: none;
+  }
+}
+
+.link-left {
+  color: #393476
+}
+
+.link-right {
+  color: $ColorloginAttention;
 }

@@ -19,6 +19,13 @@
   font-weight: normal;
   font-style: normal; }
 
+@font-face {
+  font-family: 'Geometria-ExtaBlack';
+  src: url("../fonts/Geometria-ExtaBlack.eot");
+  src: url("../fonts/Geometria-ExtaBlack.woff") format("woff"), url("../fonts/Geometria-ExtaBlack.ttf") format("truetype"), url("../fonts/Geometria-ExtaBlack.svg") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
 .clearfix {
   clear: both; }
 
@@ -81,13 +88,14 @@
 .b-search {
   display: flex;
   padding-top: 53px;
-  padding-bottom: 50px; }
+  padding-bottom: 50px;
+  margin-right: 52px; }
   .b-search__field {
     font-family: "GothaProReg";
     font-size: 13px;
     padding: 10px 20px;
     color: #494949;
-    width: 465px;
+    width: 420px;
     border: none; }
   .b-search__field::placeholder {
     color: #494949; }
@@ -101,3 +109,96 @@
     cursor: pointer; }
   .b-search__btn:hover {
     background-color: rgba(190, 33, 22, 0.82); }
+
+.b-header-main__phone {
+  padding-top: 40px;
+  padding-bottom: 40px;
+  margin-right: 50px; }
+
+.b-phone__number-top {
+  font-size: 20px;
+  font-family: "Geometria-ExtaBlack";
+  text-decoration: none !important;
+  color: #be2a2a;
+  margin-bottom: 6px; }
+
+.b-phone__number-top:hover {
+  text-decoration: underline; }
+
+.b-phone__number-bottom {
+  font-size: 20px;
+  font-family: "Geometria-ExtaBlack";
+  text-decoration: none !important;
+  color: #393476; }
+
+.b-phone__number-bottom:hover {
+  text-decoration: underline; }
+
+.b-phone__button {
+  margin-top: 12px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  font-family: "Geometria-Medium";
+  font-size: 12px;
+  color: #494949;
+  border-bottom: 1px dashed #494949;
+  text-align: left;
+  padding: 0; }
+
+.b-header-main__like {
+  margin-right: 25px; }
+
+.b-like {
+  text-align: center;
+  padding-top: 50px; }
+  .b-like__icon {
+    color: #999999;
+    font-size: 22px;
+    cursor: pointer;
+    transition: .3s;
+    margin-bottom: 18px; }
+  .b-like__icon:hover {
+    color: #be2a2a; }
+  .b-like__count {
+    font-family: "Geometria-Medium";
+    font-size: 15px; }
+
+.b-cart {
+  padding-top: 50px; }
+  .b-cart__icon {
+    text-align: center;
+    font-size: 28px;
+    color: #393476;
+    margin-bottom: 12px; }
+  .b-cart__info {
+    font-size: 15px;
+    font-family: "Geometria-Medium"; }
+    .b-cart__info__count {
+      color: #393476; }
+    .b-cart__info__price {
+      color: #be2a2a; }
+
+.b-menu {
+  height: 67px;
+  width: 1500px;
+  margin: 0 auto; }
+
+.list-menu {
+  width: 1145px;
+  margin: 28px auto; }
+  .list-menu__item {
+    display: inline-block;
+    margin-right: 34px; }
+  .list-menu__item:last-child {
+    margin-right: 0 !important; }
+  .list-menu__link {
+    font-family: "Geometria-Bold";
+    font-size: 15px;
+    text-decoration: none; }
+
+.link-left {
+  color: #393476; }
+
+.link-right {
+  color: #be2a2a; }

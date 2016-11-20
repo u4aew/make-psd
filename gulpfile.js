@@ -34,7 +34,7 @@ gulp.task('sass', function () {
 });
 
 gulp.task('production-js', function () {
-    return gulp.src(['src/js/*'])
+    return gulp.src(['src/js/jquery-3.1.1.js','src/js/jquery.jcarousel.js'])
         .pipe(concat('all.js'))
         .pipe(jsmin())
         .pipe(rename({suffix: '.min'}))
