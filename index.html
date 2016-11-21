@@ -749,11 +749,10 @@
 <script>
     $(document).ready(function () {
         $(".bottom-menu__item_active").on('click', function () {
-            $(".product-box-short").toggleClass('position-normal');
-            $(".product-box-long").toggleClass('position-normal');
+            $(".product-box-short,.product-box-long").toggleClass('position-normal');
             return false;
         })
     })
 </script>
 </body>
-</html>
+</html> 
